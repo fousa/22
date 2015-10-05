@@ -61,17 +61,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brM-eW-BPs">
-                                <rect key="frame" x="284" y="285" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
+                                <rect key="frame" x="239" y="520" width="123" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <state key="normal" title="Set your birthdate"/>
                                 <connections>
                                     <action selector="next:" destination="ZTj-oZ-UZk" eventType="touchUpInside" id="pq4-Dt-Fyk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Rules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpg-dh-CtZ">
+                                <rect key="frame" x="246" y="50" width="108" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="01E-7f-jbS">
+                                <rect key="frame" x="30" y="100" width="540" height="144"/>
+                                <string key="text">The app has just one rule. A rule to make sure your current dating companion is socially accepted by age.
+
+To keep it simple. Make sure your date is older than your age divided by two and then add seven to the age and boom. You have the minimum age.</string>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="01E-7f-jbS" firstAttribute="leading" secondItem="v8K-Lv-pvR" secondAttribute="leading" constant="30" id="53l-he-r83"/>
                             <constraint firstItem="brM-eW-BPs" firstAttribute="centerX" secondItem="v8K-Lv-pvR" secondAttribute="centerX" id="8z0-cV-hmR"/>
-                            <constraint firstItem="brM-eW-BPs" firstAttribute="centerY" secondItem="v8K-Lv-pvR" secondAttribute="centerY" id="UZE-Lg-1cm"/>
+                            <constraint firstItem="Fpg-dh-CtZ" firstAttribute="centerX" secondItem="v8K-Lv-pvR" secondAttribute="centerX" id="99C-ej-MtN"/>
+                            <constraint firstItem="brM-eW-BPs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="01E-7f-jbS" secondAttribute="bottom" constant="50" id="Imr-Bh-SXQ"/>
+                            <constraint firstAttribute="bottom" secondItem="brM-eW-BPs" secondAttribute="bottom" constant="50" id="PIF-Dd-FVw"/>
+                            <constraint firstItem="Fpg-dh-CtZ" firstAttribute="top" secondItem="v8K-Lv-pvR" secondAttribute="top" constant="50" id="ml1-Ub-AcU"/>
+                            <constraint firstAttribute="trailing" secondItem="01E-7f-jbS" secondAttribute="trailing" constant="30" id="peL-Nk-AuT"/>
+                            <constraint firstItem="01E-7f-jbS" firstAttribute="top" secondItem="Fpg-dh-CtZ" secondAttribute="bottom" constant="20" id="po2-oo-vKV"/>
+                            <constraint firstItem="01E-7f-jbS" firstAttribute="centerX" secondItem="v8K-Lv-pvR" secondAttribute="centerX" id="prh-N3-F8S"/>
                         </constraints>
                     </view>
                 </viewController>

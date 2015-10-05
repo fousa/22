@@ -153,6 +153,9 @@ To keep it simple. Make sure your date is older than your age divided by two and
                             <constraint firstItem="FFS-Gs-nX7" firstAttribute="leading" secondItem="Shr-zi-gAs" secondAttribute="leading" id="zor-0e-c5I"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateField" destination="FFS-Gs-nX7" id="0S8-GN-2jk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Txu-iP-AWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

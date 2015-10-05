@@ -28,6 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SetupViewControllerDelega
     // MARK: - Setup
     
     private func presentSetupFlowIfNeeded() {
+        guard FUDefaults.birthdate == nil else {
+            // Ignore the rest of the code when a birthdate is found.
+            return
+        }
+        
         let controller = UIStoryboard(name: "Setup", bundle: nil).instantiateInitialViewController() as! SetupViewController
         controller.delegate = self
         dispatch_async(dispatch_get_main_queue()) {

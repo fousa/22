@@ -10,6 +10,21 @@ import UIKit
 
 class CounterViewController: UIViewController, SettingsViewControllerDelegate {
     
+    @IBOutlet var yearsLabel: UILabel!
+    
+    // MARK: - View flow
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let birthdate = FUDefaults.birthdate {
+            let calendar = NSCalendar.currentCalendar()
+            let ageComponents = calendar.components(.Year, fromDate: birthdate, toDate: NSDate(), options: [])
+            let minimumAge = ceil((Float(ageComponents.year) / 2.0) + 7.0)
+            yearsLabel.text = "\(Int(minimumAge))"
+        }
+    }
+    
     // MARK: - Actions
     
     @IBAction func openSettings(sender: AnyObject) {

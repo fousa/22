@@ -16,9 +16,22 @@ class SettingsViewController: UIViewController {
     
     var delegate: SettingsViewControllerDelegate?
     
+    @IBOutlet var dateField: UIDatePicker!
+    
+    // MARK: - View flow
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if let date = FUDefaults.birthdate {
+            dateField.date = date
+        }
+    }
+    
     // MARK: - Actions
     
     @IBAction func close(sender: AnyObject) {
+        FUDefaults.birthdate = dateField.date
         delegate?.settingsViewControllerShouldDismiss(self)
     }
     

@@ -16,6 +16,8 @@
 		62A87E8B1BC2F75A00CEDBFE /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A87E8A1BC2F75A00CEDBFE /* SetupViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		62A87E8E1BC2F7C100CEDBFE /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62A87E8D1BC2F7C100CEDBFE /* Settings.storyboard */; settings = {ASSET_TAGS = (); }; };
 		62A87E901BC2F7CD00CEDBFE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A87E8F1BC2F7CD00CEDBFE /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		62A87E921BC2FA7A00CEDBFE /* SetupInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A87E911BC2FA7A00CEDBFE /* SetupInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		62A87E941BC2FC1D00CEDBFE /* SetupDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A87E931BC2FC1D00CEDBFE /* SetupDateViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		62A87E8A1BC2F75A00CEDBFE /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		62A87E8D1BC2F7C100CEDBFE /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		62A87E8F1BC2F7CD00CEDBFE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		62A87E911BC2FA7A00CEDBFE /* SetupInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupInfoViewController.swift; sourceTree = "<group>"; };
+		62A87E931BC2FC1D00CEDBFE /* SetupDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupDateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				62A87E841BC2D11300CEDBFE /* Setup.storyboard */,
+				62A87E931BC2FC1D00CEDBFE /* SetupDateViewController.swift */,
+				62A87E911BC2FA7A00CEDBFE /* SetupInfoViewController.swift */,
 				62A87E8A1BC2F75A00CEDBFE /* SetupViewController.swift */,
 			);
 			path = Setup;
@@ -199,7 +205,9 @@
 			files = (
 				6299DDEE1BC2CC6900B37186 /* AppDelegate.swift in Sources */,
 				62A87E8B1BC2F75A00CEDBFE /* SetupViewController.swift in Sources */,
+				62A87E921BC2FA7A00CEDBFE /* SetupInfoViewController.swift in Sources */,
 				62A87E891BC2F71300CEDBFE /* CounterViewController.swift in Sources */,
+				62A87E941BC2FC1D00CEDBFE /* SetupDateViewController.swift in Sources */,
 				62A87E901BC2F7CD00CEDBFE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

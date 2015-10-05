@@ -24,7 +24,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="1BM-6k-SJ5" firstAttribute="top" secondItem="RvR-ym-yMa" secondAttribute="bottom" constant="20" id="f6C-xu-QIq"/>
                             <constraint firstAttribute="trailing" secondItem="1BM-6k-SJ5" secondAttribute="trailing" constant="20" id="xdq-ic-IrL"/>

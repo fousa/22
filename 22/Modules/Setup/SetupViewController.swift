@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol SetupViewControllerDelegate {
+    func setupViewControllerShouldDismiss(sender: AnyObject)
+}
+
 class SetupViewController: UIViewController, SetupInfoViewControllerDelegate, SetupDateViewControllerDelegate {
+    
+    var delegate: SetupViewControllerDelegate?
     
     @IBOutlet weak var leftConstraint: NSLayoutConstraint!
     
@@ -42,7 +48,7 @@ class SetupViewController: UIViewController, SetupInfoViewControllerDelegate, Se
     // MARK: - SetupDateViewControllerDelegate
     
     func dateViewControllerShouldDismiss(controller: SetupDateViewController) {
-        
+        delegate?.setupViewControllerShouldDismiss(self)
     }
     
 }

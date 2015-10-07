@@ -6,7 +6,7 @@
 ###################### Automatically generated ######################
 # Feel free to remove the following line if you use fastlane (which you should)
 
-version '0.1.0'
+version '1.0.0'
 
 app_identifier "be.fousa.22" # The bundle identifier of your app
 apple_id "1046641168" # This is NOT your Apple login ID, but the App ID of your app

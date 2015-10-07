@@ -46,3 +46,4 @@ fastlane/report.xml
 fastlane/screenshots
 Distribution_be.fousa.logs.ios.mobileprovision
 fastlane/Error*.png
+22.app.dSYM.zip

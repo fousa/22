@@ -1,0 +1,5 @@
+app_identifier "be.fousa.22" # The bundle identifier of your app
+apple_id "fousa" # Your Apple email address
+
+team_name "Jelle Vandebeeck"
+team_id "743AM63YFU"

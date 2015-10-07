@@ -56,6 +56,10 @@
         <scene sceneID="Pbl-Ia-6GY">
             <objects>
                 <viewController id="ZTj-oZ-UZk" customClass="SetupInfoViewController" customModule="_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZXe-r5-RSv"/>
+                        <viewControllerLayoutGuide type="bottom" id="tnT-tN-AmT"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="v8K-Lv-pvR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,20 +110,24 @@ To keep it simple. Make sure your date is older than your age divided by two and
         <scene sceneID="rGr-9e-qPg">
             <objects>
                 <viewController id="aTa-dp-muw" customClass="SetupDateViewController" customModule="_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DrR-vq-jhf"/>
+                        <viewControllerLayoutGuide type="bottom" id="uDB-4Q-MMC"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Shr-zi-gAs">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvW-Ww-8ak">
-                                <rect key="frame" x="281" y="520" width="39" height="30"/>
+                                <rect key="frame" x="280" y="520" width="40" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                <state key="normal" title="Close"/>
+                                <state key="normal" title="Finish"/>
                                 <connections>
                                     <action selector="close:" destination="aTa-dp-muw" eventType="touchUpInside" id="HOk-Oa-9gz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your birthdate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuy-v4-HA0">
-                                <rect key="frame" x="224" y="50" width="153" height="30"/>
+                                <rect key="frame" x="224" y="50" width="152.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>

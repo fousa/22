@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yJa-pI-Bte">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B22c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yJa-pI-Bte">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -17,32 +17,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1BM-6k-SJ5">
-                                <rect key="frame" x="523" y="40" width="57" height="30"/>
-                                <state key="normal" title="Settings"/>
+                                <rect key="frame" x="501" y="40" width="79" height="32"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <state key="normal" title="SETTINGS">
+                                    <color key="titleColor" red="0.0" green="0.66274509800000003" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="openSettings:" destination="yJa-pI-Bte" eventType="touchUpInside" id="URg-Qj-nWQ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVk-mV-mfv">
-                                <rect key="frame" x="235" y="120" width="130" height="144"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="120"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="181" y="168" width="238" height="263"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="220"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.95686274510000002" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MINUMUM AGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piw-9x-8z7">
-                                <rect key="frame" x="234" y="240" width="133" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR SOCIALLY ACCEPTED DATING AGE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBW-iQ-8I3">
+                                <rect key="frame" x="168" y="431" width="265" height="17"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.95686274510000002" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="NVk-mV-mfv" firstAttribute="centerX" secondItem="VSZ-7i-efX" secondAttribute="centerX" id="C0U-Ec-8KR"/>
-                            <constraint firstItem="piw-9x-8z7" firstAttribute="centerX" secondItem="VSZ-7i-efX" secondAttribute="centerX" id="Qor-x5-NDl"/>
-                            <constraint firstItem="piw-9x-8z7" firstAttribute="bottom" secondItem="NVk-mV-mfv" secondAttribute="bottom" id="dKY-af-8Kw"/>
+                            <constraint firstItem="tBW-iQ-8I3" firstAttribute="centerX" secondItem="VSZ-7i-efX" secondAttribute="centerX" id="Eb8-uz-VWb"/>
+                            <constraint firstItem="NVk-mV-mfv" firstAttribute="centerX" secondItem="VSZ-7i-efX" secondAttribute="centerX" id="Nyh-i9-O0Q"/>
                             <constraint firstItem="1BM-6k-SJ5" firstAttribute="top" secondItem="RvR-ym-yMa" secondAttribute="bottom" constant="20" id="f6C-xu-QIq"/>
-                            <constraint firstItem="NVk-mV-mfv" firstAttribute="top" secondItem="1BM-6k-SJ5" secondAttribute="bottom" constant="50" id="snY-wV-Qf3"/>
+                            <constraint firstItem="tBW-iQ-8I3" firstAttribute="top" secondItem="NVk-mV-mfv" secondAttribute="bottom" id="vny-Ah-cIb"/>
+                            <constraint firstItem="NVk-mV-mfv" firstAttribute="centerY" secondItem="VSZ-7i-efX" secondAttribute="centerY" id="wRo-qA-3Ib"/>
                             <constraint firstAttribute="trailing" secondItem="1BM-6k-SJ5" secondAttribute="trailing" constant="20" id="xdq-ic-IrL"/>
                         </constraints>
                     </view>

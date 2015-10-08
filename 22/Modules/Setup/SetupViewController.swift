@@ -40,7 +40,7 @@ class SetupViewController: UIViewController, SetupInfoViewControllerDelegate, Se
     
     func infoViewControllerShouldPresentNext(controller: SetupInfoViewController) {
         leftConstraint.constant = -view.frame.size.width
-        UIView.animateWithDuration(0.35, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.4, options: .CurveEaseInOut, animations: { () -> Void in
+        UIView.animateWithDuration(0.35, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.2, options: .CurveEaseInOut, animations: { () -> Void in
             self.view.layoutIfNeeded()
         }, completion: nil)
     }

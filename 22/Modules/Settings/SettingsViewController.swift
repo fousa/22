@@ -35,4 +35,10 @@ class SettingsViewController: UIViewController {
         delegate?.settingsViewControllerShouldDismiss(self)
     }
     
+    // MARK: - Status bar
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
 }

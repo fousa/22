@@ -51,4 +51,10 @@ class SetupViewController: UIViewController, SetupInfoViewControllerDelegate, Se
         delegate?.setupViewControllerShouldDismiss(self)
     }
     
+    // MARK: - Status bar
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
 }

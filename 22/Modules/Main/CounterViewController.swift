@@ -39,4 +39,10 @@ class CounterViewController: UIViewController, SettingsViewControllerDelegate {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    // MARK: - Status bar
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
 }

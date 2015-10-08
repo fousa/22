@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SetupViewControllerDelega
     // MARK: - Setup
     
     private func presentSetupFlowIfNeeded() {
-        guard FUDefaults.birthdate == nil else {
+        guard FUDefaults.year == nil else {
             // Ignore the rest of the code when a birthdate is found.
             return
         }

@@ -16,22 +16,22 @@ class SettingsViewController: UIViewController {
     
     var delegate: SettingsViewControllerDelegate?
     
-    @IBOutlet var dateField: UIDatePicker!
+    @IBOutlet var pickerView: FUYearPickerView!
     
     // MARK: - View flow
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let date = FUDefaults.birthdate {
-            dateField.date = date
+        if let year = FUDefaults.year {
+            pickerView.selectedYear = year
         }
     }
     
     // MARK: - Actions
     
     @IBAction func close(sender: AnyObject) {
-        FUDefaults.birthdate = dateField.date
+        FUDefaults.year = pickerView.selectedYear
         delegate?.settingsViewControllerShouldDismiss(self)
     }
     

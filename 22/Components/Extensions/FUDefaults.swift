@@ -9,19 +9,20 @@ import Foundation
 
 class FUDefaults: NSUserDefaults {
     
-    private static let FUDefaultsBirthdateKey = "FUDefaultsBirthdateKey"
+    private static let FUDefaultsYearKey = "FUDefaultsYearKey"
     
     // MARK: - Overrides
     
-    static var birthdate: NSDate? {
+    static var year: Int? {
         get {
             let defaults = NSUserDefaults.standardUserDefaults()
             defaults.synchronize()
-            return defaults.objectForKey(FUDefaultsBirthdateKey) as? NSDate
+            let optionalYear = defaults.integerForKey(FUDefaultsYearKey)
+            return optionalYear == 0 ? nil : optionalYear
         }
         set {
             let defaults = NSUserDefaults.standardUserDefaults()
-            defaults.setObject(newValue, forKey: FUDefaultsBirthdateKey)
+            defaults.setObject(newValue, forKey: FUDefaultsYearKey)
             defaults.synchronize()
         }
     }

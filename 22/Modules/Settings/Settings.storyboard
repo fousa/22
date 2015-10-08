@@ -26,38 +26,35 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set your birthdate so that we can calculate your -socially accepted- dating age." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XPn-Wx-dlC">
                                 <rect key="frame" x="30" y="140" width="540" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="J3B-dC-Gna">
-                                <rect key="frame" x="0.0" y="208" width="600" height="216"/>
-                                <date key="date" timeIntervalSinceReferenceDate="465768026.39499301">
-                                    <!--2015-10-05 20:00:26 +0000-->
-                                </date>
-                            </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your birthdate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sn-SY-kN2">
                                 <rect key="frame" x="224" y="90" width="153" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTM-iq-cxr" customClass="FUYearPickerView" customModule="_2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="208" width="600" height="216"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.80000001192092896" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wTM-iq-cxr" secondAttribute="trailing" id="BR0-qw-f7K"/>
                             <constraint firstAttribute="trailing" secondItem="jhc-mD-zI8" secondAttribute="trailing" constant="20" id="CE9-Va-o6b"/>
                             <constraint firstItem="jhc-mD-zI8" firstAttribute="top" secondItem="mwM-Wz-VVk" secondAttribute="bottom" constant="20" id="CQv-mx-gAB"/>
                             <constraint firstItem="1Sn-SY-kN2" firstAttribute="centerX" secondItem="hTP-zP-fxB" secondAttribute="centerX" id="K3A-Lu-gP0"/>
                             <constraint firstItem="1Sn-SY-kN2" firstAttribute="top" secondItem="jhc-mD-zI8" secondAttribute="bottom" constant="20" id="Kc4-gT-40I"/>
+                            <constraint firstItem="wTM-iq-cxr" firstAttribute="top" secondItem="XPn-Wx-dlC" secondAttribute="bottom" constant="20" id="R9i-lh-2KV"/>
+                            <constraint firstItem="wTM-iq-cxr" firstAttribute="leading" secondItem="hTP-zP-fxB" secondAttribute="leading" id="Z7R-Nb-iiP"/>
                             <constraint firstItem="XPn-Wx-dlC" firstAttribute="top" secondItem="1Sn-SY-kN2" secondAttribute="bottom" constant="20" id="ZY9-6y-B9M"/>
                             <constraint firstAttribute="trailing" secondItem="XPn-Wx-dlC" secondAttribute="trailing" constant="30" id="mpz-c5-JvO"/>
-                            <constraint firstItem="J3B-dC-Gna" firstAttribute="leading" secondItem="hTP-zP-fxB" secondAttribute="leading" id="obQ-lL-GIR"/>
-                            <constraint firstItem="J3B-dC-Gna" firstAttribute="top" secondItem="XPn-Wx-dlC" secondAttribute="bottom" constant="20" id="uUE-0p-xEK"/>
-                            <constraint firstAttribute="trailing" secondItem="J3B-dC-Gna" secondAttribute="trailing" id="wDo-kJ-lhw"/>
                             <constraint firstItem="XPn-Wx-dlC" firstAttribute="leading" secondItem="hTP-zP-fxB" secondAttribute="leading" constant="30" id="wKe-He-1Cv"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="dateField" destination="J3B-dC-Gna" id="8t8-Cq-p44"/>
+                        <outlet property="pickerView" destination="wTM-iq-cxr" id="AZ2-iH-g8a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bff-Yb-hMm" userLabel="First Responder" sceneMemberID="firstResponder"/>

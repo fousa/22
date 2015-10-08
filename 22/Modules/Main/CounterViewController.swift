@@ -17,10 +17,10 @@ class CounterViewController: UIViewController, SettingsViewControllerDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        if let birthdate = FUDefaults.birthdate {
+        if let year = FUDefaults.year {
             let calendar = NSCalendar.currentCalendar()
-            let ageComponents = calendar.components(.Year, fromDate: birthdate, toDate: NSDate(), options: [])
-            let minimumAge = ceil((Float(ageComponents.year) / 2.0) + 7.0)
+            let todayComponents = calendar.component(.Year, fromDate: NSDate())
+            let minimumAge = round((Float(todayComponents - year) / 2.0) + 7.0)
             yearsLabel.text = "\(Int(minimumAge))"
         }
     }

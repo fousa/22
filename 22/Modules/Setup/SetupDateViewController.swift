@@ -16,12 +16,12 @@ class SetupDateViewController: UIViewController {
     
     var delegate: SetupDateViewControllerDelegate?
     
-    @IBOutlet var dateField: UIDatePicker!
+    @IBOutlet var pickerView: FUYearPickerView!
     
     // MARK: - Actions
     
     @IBAction func close(sender: AnyObject) {
-        FUDefaults.birthdate = dateField.date
+        FUDefaults.year = pickerView.selectedYear
         delegate?.dateViewControllerShouldDismiss(self)
     }
     

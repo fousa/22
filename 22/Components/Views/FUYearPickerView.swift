@@ -37,7 +37,7 @@ class FUYearPickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
+                
         delegate = self
         dataSource = self
     }
@@ -46,6 +46,19 @@ class FUYearPickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return String(years[row])
+    }
+    
+    func pickerView(pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 35
+    }
+    
+    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
+        let label = UILabel()
+        label.text = String(years[row])
+        label.textColor = UIColor(red:0, green:0.66, blue:0.62, alpha:1)
+        label.font = UIFont.systemFontOfSize(26.0, weight: UIFontWeightLight)
+        label.textAlignment = .Center
+        return label
     }
     
     // MARK: - UIPickerViewDataSourceUIPickerViewDataSource

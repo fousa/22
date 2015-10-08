@@ -106,10 +106,10 @@ To keep it simple. Make sure your date is older than your age divided by two and
             </objects>
             <point key="canvasLocation" x="1565" y="307"/>
         </scene>
-        <!--Setup Date View Controller-->
+        <!--Setup Year View Controller-->
         <scene sceneID="rGr-9e-qPg">
             <objects>
-                <viewController id="aTa-dp-muw" customClass="SetupDateViewController" customModule="_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aTa-dp-muw" customClass="SetupYearViewController" customModule="_2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DrR-vq-jhf"/>
                         <viewControllerLayoutGuide type="bottom" id="uDB-4Q-MMC"/>

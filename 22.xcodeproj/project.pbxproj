@@ -17,7 +17,7 @@
 		62A87E8E1BC2F7C100CEDBFE /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62A87E8D1BC2F7C100CEDBFE /* Settings.storyboard */; settings = {ASSET_TAGS = (); }; };
 		62A87E901BC2F7CD00CEDBFE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A87E8F1BC2F7CD00CEDBFE /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		62A87E921BC2FA7A00CEDBFE /* SetupInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A87E911BC2FA7A00CEDBFE /* SetupInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		62A87E941BC2FC1D00CEDBFE /* SetupDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A87E931BC2FC1D00CEDBFE /* SetupDateViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		62A87E941BC2FC1D00CEDBFE /* SetupYearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A87E931BC2FC1D00CEDBFE /* SetupYearViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		62A87E981BC30F1B00CEDBFE /* FUDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A87E971BC30F1B00CEDBFE /* FUDefaults.swift */; settings = {ASSET_TAGS = (); }; };
 		62BC86641BC673510013D5CD /* FUYearPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BC86631BC673510013D5CD /* FUYearPickerView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -35,7 +35,7 @@
 		62A87E8D1BC2F7C100CEDBFE /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		62A87E8F1BC2F7CD00CEDBFE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		62A87E911BC2FA7A00CEDBFE /* SetupInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupInfoViewController.swift; sourceTree = "<group>"; };
-		62A87E931BC2FC1D00CEDBFE /* SetupDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupDateViewController.swift; sourceTree = "<group>"; };
+		62A87E931BC2FC1D00CEDBFE /* SetupYearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupYearViewController.swift; sourceTree = "<group>"; };
 		62A87E971BC30F1B00CEDBFE /* FUDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUDefaults.swift; sourceTree = "<group>"; };
 		62BC86631BC673510013D5CD /* FUYearPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUYearPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				62A87E841BC2D11300CEDBFE /* Setup.storyboard */,
-				62A87E931BC2FC1D00CEDBFE /* SetupDateViewController.swift */,
+				62A87E931BC2FC1D00CEDBFE /* SetupYearViewController.swift */,
 				62A87E911BC2FA7A00CEDBFE /* SetupInfoViewController.swift */,
 				62A87E8A1BC2F75A00CEDBFE /* SetupViewController.swift */,
 			);
@@ -238,7 +238,7 @@
 				62A87E921BC2FA7A00CEDBFE /* SetupInfoViewController.swift in Sources */,
 				62A87E891BC2F71300CEDBFE /* CounterViewController.swift in Sources */,
 				62A87E981BC30F1B00CEDBFE /* FUDefaults.swift in Sources */,
-				62A87E941BC2FC1D00CEDBFE /* SetupDateViewController.swift in Sources */,
+				62A87E941BC2FC1D00CEDBFE /* SetupYearViewController.swift in Sources */,
 				62BC86641BC673510013D5CD /* FUYearPickerView.swift in Sources */,
 				62A87E901BC2F7CD00CEDBFE /* SettingsViewController.swift in Sources */,
 			);

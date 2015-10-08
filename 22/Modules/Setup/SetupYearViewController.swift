@@ -1,5 +1,5 @@
 //
-//  SetupDateViewController.swift
+//  SetupYearViewController.swift
 //  22
 //
 //  Created by Jelle Vandenbeeck on 05/10/15.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol SetupDateViewControllerDelegate {
-    func dateViewControllerShouldDismiss(controller: SetupDateViewController)
+protocol SetupYearViewControllerDelegate {
+    func yearViewControllerShouldDismiss(controller: SetupYearViewController)
 }
 
-class SetupDateViewController: UIViewController {
+class SetupYearViewController: UIViewController {
     
-    var delegate: SetupDateViewControllerDelegate?
+    var delegate: SetupYearViewControllerDelegate?
     
     @IBOutlet var pickerView: FUYearPickerView!
     
@@ -22,7 +22,7 @@ class SetupDateViewController: UIViewController {
     
     @IBAction func close(sender: AnyObject) {
         FUDefaults.year = pickerView.selectedYear
-        delegate?.dateViewControllerShouldDismiss(self)
+        delegate?.yearViewControllerShouldDismiss(self)
     }
     
 }

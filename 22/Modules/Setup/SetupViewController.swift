@@ -12,7 +12,7 @@ protocol SetupViewControllerDelegate {
     func setupViewControllerShouldDismiss(sender: AnyObject)
 }
 
-class SetupViewController: UIViewController, SetupInfoViewControllerDelegate, SetupDateViewControllerDelegate {
+class SetupViewController: UIViewController, SetupInfoViewControllerDelegate, SetupYearViewControllerDelegate {
     
     var delegate: SetupViewControllerDelegate?
     
@@ -31,7 +31,7 @@ class SetupViewController: UIViewController, SetupInfoViewControllerDelegate, Se
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let controller = segue.destinationViewController as? SetupInfoViewController {
             controller.delegate = self
-        } else if let controller = segue.destinationViewController as? SetupDateViewController {
+        } else if let controller = segue.destinationViewController as? SetupYearViewController {
             controller.delegate = self
         }
     }
@@ -47,7 +47,7 @@ class SetupViewController: UIViewController, SetupInfoViewControllerDelegate, Se
     
     // MARK: - SetupDateViewControllerDelegate
     
-    func dateViewControllerShouldDismiss(controller: SetupDateViewController) {
+    func yearViewControllerShouldDismiss(controller: SetupYearViewController) {
         delegate?.setupViewControllerShouldDismiss(self)
     }
     

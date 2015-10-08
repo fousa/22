@@ -16,11 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhc-mD-zI8">
-                                <rect key="frame" x="527" y="40" width="53" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhc-mD-zI8">
+                                <rect key="frame" x="535" y="40" width="45" height="45"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                <state key="normal" title="CLOSE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Dzb-3o-VdX"/>
+                                    <constraint firstAttribute="width" constant="45" id="EEN-nc-76g"/>
+                                </constraints>
+                                <state key="normal" image="Close">
                                     <color key="titleColor" red="0.0" green="0.66274509800000003" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -28,21 +31,21 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set your birthdate so that we can calculate your -socially accepted- dating age." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XPn-Wx-dlC">
-                                <rect key="frame" x="30" y="142" width="540" height="39"/>
+                                <rect key="frame" x="30" y="155" width="540" height="39"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <color key="textColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR BIRTH YEAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sn-SY-kN2">
-                                <rect key="frame" x="30" y="92" width="221" height="30"/>
+                                <rect key="frame" x="30" y="105" width="221" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTM-iq-cxr" customClass="FUYearPickerView" customModule="_2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="201" width="600" height="216"/>
+                                <rect key="frame" x="0.0" y="214" width="600" height="216"/>
                                 <animations/>
                             </pickerView>
                         </subviews>
@@ -70,4 +73,7 @@
             <point key="canvasLocation" x="284" y="396"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Close" width="24" height="24"/>
+    </resources>
 </document>

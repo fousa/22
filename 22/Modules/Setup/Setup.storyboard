@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B30a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eGy-Xm-Nlm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eGy-Xm-Nlm">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -148,31 +148,44 @@ TO KEEP IT SIMPLE. MAKE SURE YOUR DATE IS OLDER THAN YOUR AGE DIVIDED BY TWO PLU
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SET YOUR BIRTHDATE SO THAT WE CAN CALCULATE YOUR SOCIALLY ACCEPTED DATING AGE." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ifb-R5-bt1">
-                                <rect key="frame" x="30" y="100" width="540" height="39"/>
+                                <rect key="frame" x="30" y="100" width="540" height="38.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <color key="textColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDZ-d4-Jow" customClass="FUYearPickerView" customModule="_2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="159" width="600" height="216"/>
-                                <animations/>
-                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fI0-E3-KfP">
+                                <rect key="frame" x="0.0" y="138" width="600" height="379.5"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDZ-d4-Jow" customClass="FUYearPickerView" customModule="_2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="82" width="600" height="216"/>
+                                        <animations/>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rDZ-d4-Jow" secondAttribute="bottom" constant="20" id="J5I-dA-fDy"/>
+                                    <constraint firstAttribute="trailing" secondItem="rDZ-d4-Jow" secondAttribute="trailing" id="SiA-zQ-Ro9"/>
+                                    <constraint firstItem="rDZ-d4-Jow" firstAttribute="centerY" secondItem="fI0-E3-KfP" secondAttribute="centerY" id="VGl-1p-Fmw"/>
+                                    <constraint firstItem="rDZ-d4-Jow" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fI0-E3-KfP" secondAttribute="top" constant="20" id="eRL-Rz-0xF"/>
+                                    <constraint firstItem="rDZ-d4-Jow" firstAttribute="leading" secondItem="fI0-E3-KfP" secondAttribute="leading" id="ewO-St-SEc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.98823529409999999" green="0.95686274510000002" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="rDZ-d4-Jow" firstAttribute="top" secondItem="Ifb-R5-bt1" secondAttribute="bottom" constant="20" id="1BZ-Qe-ou5"/>
                             <constraint firstAttribute="trailing" secondItem="Ifb-R5-bt1" secondAttribute="trailing" constant="30" id="2sR-3w-7wu"/>
-                            <constraint firstItem="rDZ-d4-Jow" firstAttribute="leading" secondItem="Shr-zi-gAs" secondAttribute="leading" id="Bh5-GX-Mma"/>
-                            <constraint firstAttribute="trailing" secondItem="rDZ-d4-Jow" secondAttribute="trailing" id="BoB-Ck-ys9"/>
-                            <constraint firstItem="cvW-Ww-8ak" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rDZ-d4-Jow" secondAttribute="bottom" constant="20" id="FgK-fa-YDf"/>
+                            <constraint firstAttribute="trailing" secondItem="fI0-E3-KfP" secondAttribute="trailing" id="Dit-0X-Cuc"/>
                             <constraint firstAttribute="bottom" secondItem="cvW-Ww-8ak" secondAttribute="bottom" constant="50" id="Fkn-5H-Ioa"/>
                             <constraint firstItem="Ifb-R5-bt1" firstAttribute="centerX" secondItem="Shr-zi-gAs" secondAttribute="centerX" id="JdC-3u-Zg0"/>
                             <constraint firstItem="Nuy-v4-HA0" firstAttribute="leading" secondItem="Shr-zi-gAs" secondAttribute="leading" constant="30" id="Pwz-QN-f2U"/>
                             <constraint firstItem="Ifb-R5-bt1" firstAttribute="leading" secondItem="Shr-zi-gAs" secondAttribute="leading" constant="30" id="RAQ-cM-N4f"/>
+                            <constraint firstItem="cvW-Ww-8ak" firstAttribute="top" secondItem="fI0-E3-KfP" secondAttribute="bottom" id="n2D-N1-5UG"/>
                             <constraint firstItem="Nuy-v4-HA0" firstAttribute="top" secondItem="Shr-zi-gAs" secondAttribute="top" constant="50" id="oRS-hP-kf9"/>
+                            <constraint firstItem="fI0-E3-KfP" firstAttribute="leading" secondItem="Shr-zi-gAs" secondAttribute="leading" id="pbB-bV-Fz1"/>
                             <constraint firstItem="cvW-Ww-8ak" firstAttribute="centerX" secondItem="Shr-zi-gAs" secondAttribute="centerX" id="rpn-x0-egx"/>
+                            <constraint firstItem="fI0-E3-KfP" firstAttribute="top" secondItem="Ifb-R5-bt1" secondAttribute="bottom" id="w0c-bg-Jys"/>
                             <constraint firstItem="Ifb-R5-bt1" firstAttribute="top" secondItem="Nuy-v4-HA0" secondAttribute="bottom" constant="20" id="w7C-l9-poQ"/>
                         </constraints>
                     </view>

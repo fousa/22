@@ -76,4 +76,14 @@ class FUYearPickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
     private func row(year year: Int) -> Int {
         return years.indexOf(year) ?? 0
     }
+    
+    // MARK: - Drawing
+    
+    override func drawRect(rect: CGRect) {
+        let context = UIGraphicsGetCurrentContext()
+        CGContextSetStrokeColorWithColor(context, UIColor(red:0, green:0.66, blue:0.62, alpha:1).CGColor)
+        let offset: CGFloat = 38
+        CGContextStrokeRect(context, CGRectMake(-10.0, CGRectGetMidY(rect) - offset / 2.0, rect.size.width + 10.0, offset))
+    }
+    
 }

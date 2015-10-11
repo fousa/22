@@ -20,7 +20,7 @@ class CounterViewController: UIViewController, SettingsViewControllerDelegate {
         if let year = FUDefaults.year {
             let calendar = NSCalendar.currentCalendar()
             let todayComponents = calendar.component(.Year, fromDate: NSDate())
-            let minimumAge = round((Float(todayComponents - year) / 2.0) + 7.0)
+            let minimumAge = floor((Float(todayComponents - year) / 2.0) + 7.0)
             yearsLabel.text = "\(Int(minimumAge))"
         }
     }

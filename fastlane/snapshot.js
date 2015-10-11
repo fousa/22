@@ -3,6 +3,9 @@
 var target = UIATarget.localTarget();
 target.setDeviceOrientation(UIA_DEVICE_ORIENTATION_PORTRAIT);
 
+// Remove the user defaults.
+target.frontMostApp().setPreferencesValueForKey(0, 'FUDefaultsYearKey');
+
 // Show the information screen.
 captureLocalizedScreenshot("1-Information")
 target.frontMostApp().mainWindow().buttons()["SET YOUR BIRTH YEAR"].tap();

@@ -19,6 +19,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1BM-6k-SJ5">
                                 <rect key="frame" x="535" y="40" width="45" height="45"/>
                                 <animations/>
+                                <accessibility key="accessibilityConfiguration" label="Open settings"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="TfM-tf-doO"/>
                                     <constraint firstAttribute="height" constant="45" id="mzP-D2-HNN"/>

@@ -359,12 +359,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jelle Vandebeeck (743AM63YFU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jelle Vandebeeck (743AM63YFU)";
 				CURRENT_PROJECT_VERSION = 7;
 				INFOPLIST_FILE = 22/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = be.fousa.22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "305b2465-8796-49ef-af72-06979b549db3";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

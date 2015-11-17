@@ -38,8 +38,8 @@
                                 <color key="textColor" red="1" green="0.47058823529411764" blue="0.35294117647058826" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR SOCIALLY ACCEPTED DATING AGE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBW-iQ-8I3">
-                                <rect key="frame" x="168" y="431" width="265" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IT’S OKAY FOR YOU TO DATE SOMEONE THAT IS AT LEAST 75 YEARS YOUNG." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBW-iQ-8I3">
+                                <rect key="frame" x="49" y="431" width="503" height="17"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                 <color key="textColor" red="1" green="0.47058823529411764" blue="0.35294117647058826" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,9 +49,11 @@
                         <animations/>
                         <color key="backgroundColor" red="0.98823529409999999" green="0.95686274510000002" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tBW-iQ-8I3" secondAttribute="trailing" constant="20" id="01s-wY-r77"/>
                             <constraint firstItem="tBW-iQ-8I3" firstAttribute="centerX" secondItem="VSZ-7i-efX" secondAttribute="centerX" id="Eb8-uz-VWb"/>
                             <constraint firstItem="NVk-mV-mfv" firstAttribute="centerX" secondItem="VSZ-7i-efX" secondAttribute="centerX" id="Nyh-i9-O0Q"/>
                             <constraint firstItem="1BM-6k-SJ5" firstAttribute="top" secondItem="RvR-ym-yMa" secondAttribute="bottom" id="f6C-xu-QIq"/>
+                            <constraint firstItem="tBW-iQ-8I3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VSZ-7i-efX" secondAttribute="leading" constant="20" id="qt9-xZ-lFd"/>
                             <constraint firstItem="tBW-iQ-8I3" firstAttribute="top" secondItem="NVk-mV-mfv" secondAttribute="bottom" id="vny-Ah-cIb"/>
                             <constraint firstItem="NVk-mV-mfv" firstAttribute="centerY" secondItem="VSZ-7i-efX" secondAttribute="centerY" id="wRo-qA-3Ib"/>
                             <constraint firstAttribute="trailing" secondItem="1BM-6k-SJ5" secondAttribute="trailing" constant="20" id="xdq-ic-IrL"/>

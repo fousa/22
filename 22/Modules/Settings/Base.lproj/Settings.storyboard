@@ -31,25 +31,21 @@
                                     <action selector="close:" destination="6Tw-kT-5ZI" eventType="touchUpInside" id="oKJ-1Q-rCD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SET YOUR BIRTHDATE SO THAT WE CAN CALCULATE YOUR SOCIALLY ACCEPTED DATING AGE." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XPn-Wx-dlC">
-                                <rect key="frame" x="30" y="135" width="540" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XPn-Wx-dlC">
+                                <rect key="frame" x="30" y="80" width="540" height="96"/>
                                 <animations/>
+                                <string key="text">SO YOU MADE A MISTAKE, DON’T WORRY YOU CAN SET YOUR REAL BIRTH YEAR HERE. 
+
+BUT BE CAREFUL. WE NEED THIS TO BE CORRECT IN ORDE TO PERFORM THE COMPLEX “MINIMUM DATING AGE” CALCULATION.</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <color key="textColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR BIRTH YEAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sn-SY-kN2">
-                                <rect key="frame" x="30" y="85" width="221" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swu-1U-mDA">
-                                <rect key="frame" x="0.0" y="174" width="600" height="426"/>
+                                <rect key="frame" x="0.0" y="176" width="600" height="424"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTM-iq-cxr" customClass="FUYearPickerView" customModule="_2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="105" width="600" height="216"/>
+                                        <rect key="frame" x="0.0" y="104" width="600" height="216"/>
                                         <animations/>
                                     </pickerView>
                                 </subviews>
@@ -59,19 +55,27 @@
                                     <constraint firstAttribute="trailing" secondItem="wTM-iq-cxr" secondAttribute="trailing" id="17M-Pf-nKr"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wTM-iq-cxr" secondAttribute="bottom" id="T9L-YC-Bo1"/>
                                     <constraint firstItem="wTM-iq-cxr" firstAttribute="centerY" secondItem="Swu-1U-mDA" secondAttribute="centerY" id="V3A-Zu-gC9"/>
-                                    <constraint firstItem="wTM-iq-cxr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Swu-1U-mDA" secondAttribute="top" constant="20" id="gfq-mg-47C"/>
+                                    <constraint firstItem="wTM-iq-cxr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Swu-1U-mDA" secondAttribute="top" constant="10" id="gfq-mg-47C"/>
                                     <constraint firstItem="wTM-iq-cxr" firstAttribute="leading" secondItem="Swu-1U-mDA" secondAttribute="leading" id="kJk-Vk-ZIe"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TELL US YOUR BIRTH YEAR" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sn-SY-kN2">
+                                <rect key="frame" x="30" y="30" width="495" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.98823529409999999" green="0.95686274510000002" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="jhc-mD-zI8" firstAttribute="leading" secondItem="1Sn-SY-kN2" secondAttribute="trailing" constant="10" id="549-A3-6iM"/>
                             <constraint firstItem="YQS-52-RsW" firstAttribute="top" secondItem="Swu-1U-mDA" secondAttribute="bottom" id="67h-Oe-jlh"/>
                             <constraint firstAttribute="trailing" secondItem="jhc-mD-zI8" secondAttribute="trailing" constant="20" id="CE9-Va-o6b"/>
                             <constraint firstItem="jhc-mD-zI8" firstAttribute="top" secondItem="mwM-Wz-VVk" secondAttribute="bottom" id="CQv-mx-gAB"/>
                             <constraint firstItem="1Sn-SY-kN2" firstAttribute="leading" secondItem="hTP-zP-fxB" secondAttribute="leading" constant="30" id="Fq3-w9-Ic1"/>
-                            <constraint firstItem="1Sn-SY-kN2" firstAttribute="top" secondItem="jhc-mD-zI8" secondAttribute="bottom" constant="20" id="Kc4-gT-40I"/>
+                            <constraint firstItem="1Sn-SY-kN2" firstAttribute="top" secondItem="mwM-Wz-VVk" secondAttribute="bottom" constant="10" id="LP0-8L-1HK"/>
                             <constraint firstItem="Swu-1U-mDA" firstAttribute="top" secondItem="XPn-Wx-dlC" secondAttribute="bottom" id="Txc-PB-Dkj"/>
                             <constraint firstAttribute="trailing" secondItem="Swu-1U-mDA" secondAttribute="trailing" id="V3j-rs-Sa6"/>
                             <constraint firstItem="XPn-Wx-dlC" firstAttribute="top" secondItem="1Sn-SY-kN2" secondAttribute="bottom" constant="20" id="ZY9-6y-B9M"/>

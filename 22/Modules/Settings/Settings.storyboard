@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6Tw-kT-5ZI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C40a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6Tw-kT-5ZI">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--Settings View Controller-->
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhc-mD-zI8">
-                                <rect key="frame" x="535" y="40" width="45" height="45"/>
+                                <rect key="frame" x="535" y="20" width="45" height="45"/>
                                 <animations/>
                                 <accessibility key="accessibilityConfiguration" label="Close settings"/>
                                 <constraints>
@@ -32,27 +32,28 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SET YOUR BIRTHDATE SO THAT WE CAN CALCULATE YOUR SOCIALLY ACCEPTED DATING AGE." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XPn-Wx-dlC">
-                                <rect key="frame" x="30" y="155" width="540" height="38.5"/>
+                                <rect key="frame" x="30" y="135" width="540" height="39"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <color key="textColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR BIRTH YEAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sn-SY-kN2">
-                                <rect key="frame" x="30" y="105" width="221" height="30"/>
+                                <rect key="frame" x="30" y="85" width="221" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swu-1U-mDA">
-                                <rect key="frame" x="0.0" y="193.5" width="600" height="406.5"/>
+                                <rect key="frame" x="0.0" y="174" width="600" height="426"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTM-iq-cxr" customClass="FUYearPickerView" customModule="_2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="95" width="600" height="216"/>
+                                        <rect key="frame" x="0.0" y="105" width="600" height="216"/>
                                         <animations/>
                                     </pickerView>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="wTM-iq-cxr" secondAttribute="trailing" id="17M-Pf-nKr"/>
@@ -68,7 +69,7 @@
                         <constraints>
                             <constraint firstItem="YQS-52-RsW" firstAttribute="top" secondItem="Swu-1U-mDA" secondAttribute="bottom" id="67h-Oe-jlh"/>
                             <constraint firstAttribute="trailing" secondItem="jhc-mD-zI8" secondAttribute="trailing" constant="20" id="CE9-Va-o6b"/>
-                            <constraint firstItem="jhc-mD-zI8" firstAttribute="top" secondItem="mwM-Wz-VVk" secondAttribute="bottom" constant="20" id="CQv-mx-gAB"/>
+                            <constraint firstItem="jhc-mD-zI8" firstAttribute="top" secondItem="mwM-Wz-VVk" secondAttribute="bottom" id="CQv-mx-gAB"/>
                             <constraint firstItem="1Sn-SY-kN2" firstAttribute="leading" secondItem="hTP-zP-fxB" secondAttribute="leading" constant="30" id="Fq3-w9-Ic1"/>
                             <constraint firstItem="1Sn-SY-kN2" firstAttribute="top" secondItem="jhc-mD-zI8" secondAttribute="bottom" constant="20" id="Kc4-gT-40I"/>
                             <constraint firstItem="Swu-1U-mDA" firstAttribute="top" secondItem="XPn-Wx-dlC" secondAttribute="bottom" id="Txc-PB-Dkj"/>

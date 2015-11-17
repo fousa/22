@@ -68,7 +68,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brM-eW-BPs">
-                                <rect key="frame" x="212" y="518" width="176" height="32"/>
+                                <rect key="frame" x="212" y="528" width="176" height="32"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <state key="normal" title="SET YOUR BIRTH YEAR">
@@ -104,7 +104,7 @@ TO KEEP IT SIMPLE. MAKE SURE YOUR DATE IS OLDER THAN YOUR AGE DIVIDED BY TWO PLU
                             <constraint firstItem="01E-7f-jbS" firstAttribute="leading" secondItem="v8K-Lv-pvR" secondAttribute="leading" constant="30" id="53l-he-r83"/>
                             <constraint firstItem="brM-eW-BPs" firstAttribute="centerX" secondItem="v8K-Lv-pvR" secondAttribute="centerX" id="8z0-cV-hmR"/>
                             <constraint firstItem="brM-eW-BPs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="01E-7f-jbS" secondAttribute="bottom" constant="50" id="Imr-Bh-SXQ"/>
-                            <constraint firstAttribute="bottom" secondItem="brM-eW-BPs" secondAttribute="bottom" constant="50" id="PIF-Dd-FVw"/>
+                            <constraint firstAttribute="bottom" secondItem="brM-eW-BPs" secondAttribute="bottom" constant="40" id="PIF-Dd-FVw"/>
                             <constraint firstItem="Fpg-dh-CtZ" firstAttribute="top" secondItem="v8K-Lv-pvR" secondAttribute="top" constant="50" id="ml1-Ub-AcU"/>
                             <constraint firstAttribute="trailing" secondItem="01E-7f-jbS" secondAttribute="trailing" constant="30" id="peL-Nk-AuT"/>
                             <constraint firstItem="01E-7f-jbS" firstAttribute="top" secondItem="Fpg-dh-CtZ" secondAttribute="bottom" constant="20" id="po2-oo-vKV"/>
@@ -130,7 +130,7 @@ TO KEEP IT SIMPLE. MAKE SURE YOUR DATE IS OLDER THAN YOUR AGE DIVIDED BY TWO PLU
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvW-Ww-8ak">
-                                <rect key="frame" x="236" y="518" width="129" height="32"/>
+                                <rect key="frame" x="236" y="528" width="129" height="32"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <state key="normal" title="CALCULATE AGE">
@@ -155,10 +155,10 @@ TO KEEP IT SIMPLE. MAKE SURE YOUR DATE IS OLDER THAN YOUR AGE DIVIDED BY TWO PLU
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fI0-E3-KfP">
-                                <rect key="frame" x="0.0" y="139" width="600" height="379"/>
+                                <rect key="frame" x="0.0" y="139" width="600" height="389"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDZ-d4-Jow" customClass="FUYearPickerView" customModule="_2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="82" width="600" height="216"/>
+                                        <rect key="frame" x="0.0" y="87" width="600" height="216"/>
                                         <animations/>
                                     </pickerView>
                                 </subviews>
@@ -178,7 +178,7 @@ TO KEEP IT SIMPLE. MAKE SURE YOUR DATE IS OLDER THAN YOUR AGE DIVIDED BY TWO PLU
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Ifb-R5-bt1" secondAttribute="trailing" constant="30" id="2sR-3w-7wu"/>
                             <constraint firstAttribute="trailing" secondItem="fI0-E3-KfP" secondAttribute="trailing" id="Dit-0X-Cuc"/>
-                            <constraint firstAttribute="bottom" secondItem="cvW-Ww-8ak" secondAttribute="bottom" constant="50" id="Fkn-5H-Ioa"/>
+                            <constraint firstAttribute="bottom" secondItem="cvW-Ww-8ak" secondAttribute="bottom" constant="40" id="Fkn-5H-Ioa"/>
                             <constraint firstItem="Ifb-R5-bt1" firstAttribute="centerX" secondItem="Shr-zi-gAs" secondAttribute="centerX" id="JdC-3u-Zg0"/>
                             <constraint firstItem="Nuy-v4-HA0" firstAttribute="leading" secondItem="Shr-zi-gAs" secondAttribute="leading" constant="30" id="Pwz-QN-f2U"/>
                             <constraint firstItem="Ifb-R5-bt1" firstAttribute="leading" secondItem="Shr-zi-gAs" secondAttribute="leading" constant="30" id="RAQ-cM-N4f"/>

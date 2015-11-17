@@ -86,29 +86,51 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="01E-7f-jbS">
-                                <rect key="frame" x="30" y="100" width="540" height="153"/>
+                                <rect key="frame" x="30" y="100" width="540" height="77"/>
                                 <animations/>
                                 <string key="text">THE APP HAS JUST ONE RULE. 
 
-A RULE TO MAKE SURE YOUR CURRENT DATING PARTNER HAS A SOCIALLY ACCEPTED AGE.
-
-TO KEEP IT SIMPLE. MAKE SURE YOUR DATE IS OLDER THAN YOUR AGE DIVIDED BY TWO PLUS SEVEN. AND BOOM! YOU HAVE YOUR MINIMUM DATING AGE AGE.</string>
+A RULE TO MAKE SURE YOUR CURRENT DATING PARTNER HAS A SOCIALLY ACCEPTED AGE.</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <color key="textColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="teF-J7-FWr">
+                                <rect key="frame" x="30" y="321" width="540" height="58"/>
+                                <animations/>
+                                <string key="text">TO KEEP IT SIMPLE. MAKE SURE YOUR DATE IS OLDER THAN YOUR AGE DIVIDED BY TWO PLUS SEVEN. AND BOOM! YOU HAVE YOUR MINIMUM DATING AGE AGE.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <color key="textColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Algoritm" translatesAutoresizingMaskIntoConstraints="NO" id="uUu-hf-PXg">
+                                <rect key="frame" x="218" y="217" width="165" height="64"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Mvw-Ql-Foe"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Mvw-Ql-Foe"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.95686274509803926" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="01E-7f-jbS" firstAttribute="leading" secondItem="v8K-Lv-pvR" secondAttribute="leading" constant="30" id="53l-he-r83"/>
+                            <constraint firstItem="teF-J7-FWr" firstAttribute="leading" secondItem="01E-7f-jbS" secondAttribute="leading" id="5kH-X2-ryr"/>
                             <constraint firstItem="brM-eW-BPs" firstAttribute="centerX" secondItem="v8K-Lv-pvR" secondAttribute="centerX" id="8z0-cV-hmR"/>
-                            <constraint firstItem="brM-eW-BPs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="01E-7f-jbS" secondAttribute="bottom" constant="50" id="Imr-Bh-SXQ"/>
                             <constraint firstAttribute="bottom" secondItem="brM-eW-BPs" secondAttribute="bottom" constant="40" id="PIF-Dd-FVw"/>
+                            <constraint firstItem="teF-J7-FWr" firstAttribute="top" secondItem="uUu-hf-PXg" secondAttribute="bottom" constant="40" id="W31-fA-6Ua"/>
+                            <constraint firstItem="uUu-hf-PXg" firstAttribute="centerX" secondItem="teF-J7-FWr" secondAttribute="centerX" id="cHK-g3-E6E"/>
                             <constraint firstItem="Fpg-dh-CtZ" firstAttribute="top" secondItem="v8K-Lv-pvR" secondAttribute="top" constant="50" id="ml1-Ub-AcU"/>
                             <constraint firstAttribute="trailing" secondItem="01E-7f-jbS" secondAttribute="trailing" constant="30" id="peL-Nk-AuT"/>
                             <constraint firstItem="01E-7f-jbS" firstAttribute="top" secondItem="Fpg-dh-CtZ" secondAttribute="bottom" constant="20" id="po2-oo-vKV"/>
                             <constraint firstItem="01E-7f-jbS" firstAttribute="centerX" secondItem="v8K-Lv-pvR" secondAttribute="centerX" id="prh-N3-F8S"/>
+                            <constraint firstItem="uUu-hf-PXg" firstAttribute="top" secondItem="01E-7f-jbS" secondAttribute="bottom" constant="40" id="qr4-d1-2cs"/>
+                            <constraint firstItem="teF-J7-FWr" firstAttribute="trailing" secondItem="01E-7f-jbS" secondAttribute="trailing" id="zn4-Ce-gzP"/>
                             <constraint firstItem="Fpg-dh-CtZ" firstAttribute="leading" secondItem="v8K-Lv-pvR" secondAttribute="leading" constant="30" id="zwq-t0-DdK"/>
                         </constraints>
                     </view>
@@ -199,4 +221,7 @@ TO KEEP IT SIMPLE. MAKE SURE YOUR DATE IS OLDER THAN YOUR AGE DIVIDED BY TWO PLU
             <point key="canvasLocation" x="1565" y="1019"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Algoritm" width="165" height="64"/>
+    </resources>
 </document>

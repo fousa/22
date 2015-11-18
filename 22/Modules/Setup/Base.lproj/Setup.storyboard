@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eGy-Xm-Nlm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C40a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eGy-Xm-Nlm">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--Setup View Controller-->
@@ -67,51 +67,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brM-eW-BPs">
-                                <rect key="frame" x="212" y="518" width="176" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brM-eW-BPs" customClass="FURightImageButton" customModule="_2" customModuleProvider="target">
+                                <rect key="frame" x="185" y="538" width="231" height="22"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                <state key="normal" title="SET YOUR BIRTH YEAR">
+                                <state key="normal" title="SET YOUR BIRTH YEAR" image="Arrow">
                                     <color key="titleColor" red="0.0" green="0.66274509803921566" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="next:" destination="ZTj-oZ-UZk" eventType="touchUpInside" id="pq4-Dt-Fyk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE RULES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpg-dh-CtZ">
-                                <rect key="frame" x="30" y="50" width="134" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHAT IS 22?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpg-dh-CtZ">
+                                <rect key="frame" x="30" y="20" width="153" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" red="1" green="0.47450980392156861" blue="0.35294117647058826" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="01E-7f-jbS">
-                                <rect key="frame" x="30" y="100" width="540" height="153"/>
+                                <rect key="frame" x="30" y="70" width="540" height="77"/>
                                 <animations/>
-                                <string key="text">THE APP HAS JUST ONE RULE. 
+                                <string key="text">WELL, IT IS SIMPLE. THERE IS JUST ONE RULE.
 
-A RULE TO MAKE SURE YOUR CURRENT DATING PARTNER HAS A SOCIALLY ACCEPTED AGE.
-
-TO KEEP IT SIMPLE. MAKE SURE YOUR DATE IS OLDER THAN YOUR AGE DIVIDED BY TWO PLUS SEVEN. AND BOOM! YOU HAVE YOUR MINIMUM DATING AGE AGE.</string>
+WHEN YOU TAKE THE ALGORITM BELOW INTO ACCOUNT, YOU GET YOUR DATE’S MINIMUM AGE THAT IS ACCEPTED IN OUR ENVIRONMENT.</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <color key="textColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ONE SMALL REMARK: MAKE SURE YOU KEEP IT LEGAL, WE DO NOT TAKE LEGAL MINIMUM AGE REQUIREMENTS INTO ACCOUNT." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="teF-J7-FWr">
+                                <rect key="frame" x="30" y="291" width="540" height="39"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <color key="textColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Algoritm EN" translatesAutoresizingMaskIntoConstraints="NO" id="uUu-hf-PXg">
+                                <rect key="frame" x="218" y="187" width="165" height="64"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Mvw-Ql-Foe"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Mvw-Ql-Foe"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.95686274509803926" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="01E-7f-jbS" firstAttribute="leading" secondItem="v8K-Lv-pvR" secondAttribute="leading" constant="30" id="53l-he-r83"/>
+                            <constraint firstItem="teF-J7-FWr" firstAttribute="leading" secondItem="01E-7f-jbS" secondAttribute="leading" id="5kH-X2-ryr"/>
                             <constraint firstItem="brM-eW-BPs" firstAttribute="centerX" secondItem="v8K-Lv-pvR" secondAttribute="centerX" id="8z0-cV-hmR"/>
-                            <constraint firstItem="brM-eW-BPs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="01E-7f-jbS" secondAttribute="bottom" constant="50" id="Imr-Bh-SXQ"/>
-                            <constraint firstAttribute="bottom" secondItem="brM-eW-BPs" secondAttribute="bottom" constant="50" id="PIF-Dd-FVw"/>
-                            <constraint firstItem="Fpg-dh-CtZ" firstAttribute="top" secondItem="v8K-Lv-pvR" secondAttribute="top" constant="50" id="ml1-Ub-AcU"/>
+                            <constraint firstAttribute="bottom" secondItem="brM-eW-BPs" secondAttribute="bottom" constant="40" id="PIF-Dd-FVw"/>
+                            <constraint firstItem="teF-J7-FWr" firstAttribute="top" secondItem="uUu-hf-PXg" secondAttribute="bottom" constant="40" id="W31-fA-6Ua"/>
+                            <constraint firstItem="brM-eW-BPs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="teF-J7-FWr" secondAttribute="bottom" constant="20" id="XAf-2c-Vi8"/>
+                            <constraint firstItem="uUu-hf-PXg" firstAttribute="centerX" secondItem="teF-J7-FWr" secondAttribute="centerX" id="cHK-g3-E6E"/>
+                            <constraint firstItem="Fpg-dh-CtZ" firstAttribute="top" secondItem="v8K-Lv-pvR" secondAttribute="top" constant="20" id="ml1-Ub-AcU"/>
                             <constraint firstAttribute="trailing" secondItem="01E-7f-jbS" secondAttribute="trailing" constant="30" id="peL-Nk-AuT"/>
                             <constraint firstItem="01E-7f-jbS" firstAttribute="top" secondItem="Fpg-dh-CtZ" secondAttribute="bottom" constant="20" id="po2-oo-vKV"/>
                             <constraint firstItem="01E-7f-jbS" firstAttribute="centerX" secondItem="v8K-Lv-pvR" secondAttribute="centerX" id="prh-N3-F8S"/>
+                            <constraint firstItem="uUu-hf-PXg" firstAttribute="top" secondItem="01E-7f-jbS" secondAttribute="bottom" constant="40" id="qr4-d1-2cs"/>
+                            <constraint firstItem="teF-J7-FWr" firstAttribute="trailing" secondItem="01E-7f-jbS" secondAttribute="trailing" id="zn4-Ce-gzP"/>
                             <constraint firstItem="Fpg-dh-CtZ" firstAttribute="leading" secondItem="v8K-Lv-pvR" secondAttribute="leading" constant="30" id="zwq-t0-DdK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="uUu-hf-PXg" id="gDw-NM-zwj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6J-bH-DWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,39 +153,42 @@ TO KEEP IT SIMPLE. MAKE SURE YOUR DATE IS OLDER THAN YOUR AGE DIVIDED BY TWO PLU
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvW-Ww-8ak">
-                                <rect key="frame" x="236" y="518" width="129" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvW-Ww-8ak" customClass="FURightImageButton" customModule="_2" customModuleProvider="target">
+                                <rect key="frame" x="211" y="538" width="179" height="22"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                <state key="normal" title="CALCULATE AGE">
+                                <state key="normal" title="CALCULATE AGE" image="Arrow">
                                     <color key="titleColor" red="0.0" green="0.66274509803921566" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="close:" destination="aTa-dp-muw" eventType="touchUpInside" id="HOk-Oa-9gz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR BIRTH YEAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuy-v4-HA0">
-                                <rect key="frame" x="30" y="50" width="221" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TELL US YOUR BIRTH YEAR" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuy-v4-HA0">
+                                <rect key="frame" x="30" y="20" width="540" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SET YOUR BIRTHDATE SO THAT WE CAN CALCULATE YOUR SOCIALLY ACCEPTED DATING AGE." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ifb-R5-bt1">
-                                <rect key="frame" x="30" y="100" width="540" height="38.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ifb-R5-bt1">
+                                <rect key="frame" x="30" y="70" width="540" height="77"/>
                                 <animations/>
+                                <string key="text">WE NEED THIS IN ORDE TO PERFORM THE COMPLEX “AGE” CALCULATION. 
+
+SO DON’T PRETEND YOU’RE YOUNGER THAN YOU REALLY ARE.</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <color key="textColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fI0-E3-KfP">
-                                <rect key="frame" x="0.0" y="138" width="600" height="379.5"/>
+                                <rect key="frame" x="0.0" y="147" width="600" height="391"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDZ-d4-Jow" customClass="FUYearPickerView" customModule="_2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="82" width="600" height="216"/>
+                                        <rect key="frame" x="0.0" y="88" width="600" height="216"/>
                                         <animations/>
                                     </pickerView>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rDZ-d4-Jow" secondAttribute="bottom" constant="20" id="J5I-dA-fDy"/>
@@ -177,12 +204,13 @@ TO KEEP IT SIMPLE. MAKE SURE YOUR DATE IS OLDER THAN YOUR AGE DIVIDED BY TWO PLU
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Ifb-R5-bt1" secondAttribute="trailing" constant="30" id="2sR-3w-7wu"/>
                             <constraint firstAttribute="trailing" secondItem="fI0-E3-KfP" secondAttribute="trailing" id="Dit-0X-Cuc"/>
-                            <constraint firstAttribute="bottom" secondItem="cvW-Ww-8ak" secondAttribute="bottom" constant="50" id="Fkn-5H-Ioa"/>
+                            <constraint firstAttribute="bottom" secondItem="cvW-Ww-8ak" secondAttribute="bottom" constant="40" id="Fkn-5H-Ioa"/>
                             <constraint firstItem="Ifb-R5-bt1" firstAttribute="centerX" secondItem="Shr-zi-gAs" secondAttribute="centerX" id="JdC-3u-Zg0"/>
                             <constraint firstItem="Nuy-v4-HA0" firstAttribute="leading" secondItem="Shr-zi-gAs" secondAttribute="leading" constant="30" id="Pwz-QN-f2U"/>
                             <constraint firstItem="Ifb-R5-bt1" firstAttribute="leading" secondItem="Shr-zi-gAs" secondAttribute="leading" constant="30" id="RAQ-cM-N4f"/>
+                            <constraint firstAttribute="trailing" secondItem="Nuy-v4-HA0" secondAttribute="trailing" constant="30" id="edl-6Y-0yA"/>
                             <constraint firstItem="cvW-Ww-8ak" firstAttribute="top" secondItem="fI0-E3-KfP" secondAttribute="bottom" id="n2D-N1-5UG"/>
-                            <constraint firstItem="Nuy-v4-HA0" firstAttribute="top" secondItem="Shr-zi-gAs" secondAttribute="top" constant="50" id="oRS-hP-kf9"/>
+                            <constraint firstItem="Nuy-v4-HA0" firstAttribute="top" secondItem="Shr-zi-gAs" secondAttribute="top" constant="20" id="oRS-hP-kf9"/>
                             <constraint firstItem="fI0-E3-KfP" firstAttribute="leading" secondItem="Shr-zi-gAs" secondAttribute="leading" id="pbB-bV-Fz1"/>
                             <constraint firstItem="cvW-Ww-8ak" firstAttribute="centerX" secondItem="Shr-zi-gAs" secondAttribute="centerX" id="rpn-x0-egx"/>
                             <constraint firstItem="fI0-E3-KfP" firstAttribute="top" secondItem="Ifb-R5-bt1" secondAttribute="bottom" id="w0c-bg-Jys"/>
@@ -198,4 +226,8 @@ TO KEEP IT SIMPLE. MAKE SURE YOUR DATE IS OLDER THAN YOUR AGE DIVIDED BY TWO PLU
             <point key="canvasLocation" x="1565" y="1019"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Algoritm EN" width="165" height="64"/>
+        <image name="Arrow" width="10" height="15"/>
+    </resources>
 </document>

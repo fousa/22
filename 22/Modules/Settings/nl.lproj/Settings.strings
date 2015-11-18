@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "YOUR BIRTH YEAR"; ObjectID = "1Sn-SY-kN2"; */
+"1Sn-SY-kN2.text" = "VERTEL ONS JE GEBOORTEJAAR";
+
+/* Class = "UILabel"; text = "SET YOUR BIRTHDATE SO THAT WE CAN CALCULATE YOUR SOCIALLY ACCEPTED DATING AGE."; ObjectID = "XPn-Wx-dlC"; */
+"XPn-Wx-dlC.text" = "JE MAAKTE EEN FOUT. GEEN PROBLEEM, JE KAN NU JE ECHTE GEBOORTEJAAR INGEVEN.\n\nMAAR LET OP! WE HEBBEN DE CORRECTE INFORMATIE NODIG OM DE COMPLEXE BEREKENING TE MAKEN.";
+
+/* Class = "UIButton"; accessibilityLabel = "Close settings"; ObjectID = "jhc-mD-zI8"; */
+"jhc-mD-zI8.accessibilityLabel" = "Sluit instellingen";

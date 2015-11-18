@@ -11,6 +11,7 @@ import UIKit
 class CounterViewController: UIViewController, SettingsViewControllerDelegate {
     
     @IBOutlet var yearsLabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
     
     // MARK: - View flow
     
@@ -22,6 +23,16 @@ class CounterViewController: UIViewController, SettingsViewControllerDelegate {
             let todayComponents = calendar.component(.Year, fromDate: NSDate())
             let minimumAge = floor((Float(todayComponents - year) / 2.0) + 7.0)
             yearsLabel.text = "\(Int(minimumAge))"
+            
+            let text = NSString(format: NSLocalizedString("main.label.description", comment: "Age description"), Int(minimumAge)) as String
+            let attributes = [
+                NSFontAttributeName : descriptionLabel.font,
+                NSForegroundColorAttributeName : descriptionLabel.textColor
+            ]
+            let attributedString = NSMutableAttributedString(string: text, attributes: attributes)
+            let range = (text as NSString).rangeOfString(String(Int(minimumAge)))
+            attributedString.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(14.0, weight: UIFontWeightSemibold), range: range)
+            descriptionLabel.attributedText = attributedString
         }
     }
     

@@ -60,6 +60,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="descriptionLabel" destination="tBW-iQ-8I3" id="I9y-7X-9bp"/>
                         <outlet property="yearsLabel" destination="NVk-mV-mfv" id="m8C-k3-udp"/>
                     </connections>
                 </viewController>

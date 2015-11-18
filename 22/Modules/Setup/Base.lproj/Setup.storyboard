@@ -96,14 +96,14 @@ WHEN YOU TAKE THE ALGORITM BELOW INTO ACCOUNT, YOU GET YOUR DATE’S MINIMUM AGE
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ONE SMALL REMARK: MAKE SURE YOU KEEP IT LEGAL, WE DO NOT TAKE LEGAL MINIMUM AGE REQUIREMENTS INTO ACCOUNT." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="teF-J7-FWr">
-                                <rect key="frame" x="30" y="291" width="540" height="39"/>
+                                <rect key="frame" x="30" y="251" width="540" height="39"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <color key="textColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Algoritm EN" translatesAutoresizingMaskIntoConstraints="NO" id="uUu-hf-PXg">
-                                <rect key="frame" x="218" y="187" width="165" height="64"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Algoritm EN" translatesAutoresizingMaskIntoConstraints="NO" id="uUu-hf-PXg">
+                                <rect key="frame" x="218" y="167" width="165" height="64"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="Mvw-Ql-Foe"/>
@@ -122,14 +122,14 @@ WHEN YOU TAKE THE ALGORITM BELOW INTO ACCOUNT, YOU GET YOUR DATE’S MINIMUM AGE
                             <constraint firstItem="teF-J7-FWr" firstAttribute="leading" secondItem="01E-7f-jbS" secondAttribute="leading" id="5kH-X2-ryr"/>
                             <constraint firstItem="brM-eW-BPs" firstAttribute="centerX" secondItem="v8K-Lv-pvR" secondAttribute="centerX" id="8z0-cV-hmR"/>
                             <constraint firstAttribute="bottom" secondItem="brM-eW-BPs" secondAttribute="bottom" constant="40" id="PIF-Dd-FVw"/>
-                            <constraint firstItem="teF-J7-FWr" firstAttribute="top" secondItem="uUu-hf-PXg" secondAttribute="bottom" constant="40" id="W31-fA-6Ua"/>
+                            <constraint firstItem="teF-J7-FWr" firstAttribute="top" secondItem="uUu-hf-PXg" secondAttribute="bottom" constant="20" id="W31-fA-6Ua"/>
                             <constraint firstItem="brM-eW-BPs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="teF-J7-FWr" secondAttribute="bottom" constant="20" id="XAf-2c-Vi8"/>
                             <constraint firstItem="uUu-hf-PXg" firstAttribute="centerX" secondItem="teF-J7-FWr" secondAttribute="centerX" id="cHK-g3-E6E"/>
                             <constraint firstItem="Fpg-dh-CtZ" firstAttribute="top" secondItem="v8K-Lv-pvR" secondAttribute="top" constant="20" id="ml1-Ub-AcU"/>
                             <constraint firstAttribute="trailing" secondItem="01E-7f-jbS" secondAttribute="trailing" constant="30" id="peL-Nk-AuT"/>
                             <constraint firstItem="01E-7f-jbS" firstAttribute="top" secondItem="Fpg-dh-CtZ" secondAttribute="bottom" constant="20" id="po2-oo-vKV"/>
                             <constraint firstItem="01E-7f-jbS" firstAttribute="centerX" secondItem="v8K-Lv-pvR" secondAttribute="centerX" id="prh-N3-F8S"/>
-                            <constraint firstItem="uUu-hf-PXg" firstAttribute="top" secondItem="01E-7f-jbS" secondAttribute="bottom" constant="40" id="qr4-d1-2cs"/>
+                            <constraint firstItem="uUu-hf-PXg" firstAttribute="top" secondItem="01E-7f-jbS" secondAttribute="bottom" constant="20" id="qr4-d1-2cs"/>
                             <constraint firstItem="teF-J7-FWr" firstAttribute="trailing" secondItem="01E-7f-jbS" secondAttribute="trailing" id="zn4-Ce-gzP"/>
                             <constraint firstItem="Fpg-dh-CtZ" firstAttribute="leading" secondItem="v8K-Lv-pvR" secondAttribute="leading" constant="30" id="zwq-t0-DdK"/>
                         </constraints>

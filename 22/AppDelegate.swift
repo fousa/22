@@ -15,7 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SetupViewControllerDelega
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window?.makeKeyAndVisible()
-        
+  
+        cleanupDefaults()
         presentSetupFlowIfNeeded()
         
         return true
@@ -23,6 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SetupViewControllerDelega
     
     func applicationWillEnterForeground(application: UIApplication) {
         presentSetupFlowIfNeeded()
+    }
+    
+    // MARK: - Testing
+    
+    private func cleanupDefaults() {
+        if NSProcessInfo.processInfo().arguments.contains("uiTesting") {
+            FUDefaults.year = nil
+        }
     }
     
     // MARK: - Setup

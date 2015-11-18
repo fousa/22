@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "04891EC81BFCFF5600731B9E"
+               BuildableName = "22UITests.xctest"
+               BlueprintName = "22UITests"
+               ReferencedContainer = "container:22.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
@@ -63,7 +73,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-AppleLanguages (en)"
+            argument = "-AppleLanguages (nl)"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

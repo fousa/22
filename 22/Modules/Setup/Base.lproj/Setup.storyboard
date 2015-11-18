@@ -70,6 +70,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brM-eW-BPs" customClass="FURightImageButton" customModule="_2" customModuleProvider="target">
                                 <rect key="frame" x="185" y="538" width="231" height="22"/>
                                 <animations/>
+                                <accessibility key="accessibilityConfiguration" identifier="next"/>
                                 <state key="normal" title="SET YOUR BIRTH YEAR" image="Arrow">
                                     <color key="titleColor" red="0.0" green="0.66274509803921566" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -156,6 +157,7 @@ WHEN YOU TAKE THE ALGORITM BELOW INTO ACCOUNT, YOU GET YOUR DATE’S MINIMUM AGE
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvW-Ww-8ak" customClass="FURightImageButton" customModule="_2" customModuleProvider="target">
                                 <rect key="frame" x="211" y="538" width="179" height="22"/>
                                 <animations/>
+                                <accessibility key="accessibilityConfiguration" identifier="next"/>
                                 <state key="normal" title="CALCULATE AGE" image="Arrow">
                                     <color key="titleColor" red="0.0" green="0.66274509803921566" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>

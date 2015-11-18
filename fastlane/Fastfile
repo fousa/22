@@ -8,7 +8,8 @@ fastlane_version "1.39.0"
 default_platform :ios
 
 platform :ios do
-  before_all do
+  desc "Deploy a new version to the App Store"
+  lane :deploy do
     increment_build_number
     commit_version_bump
     add_git_tag
@@ -18,15 +19,12 @@ platform :ios do
 
     sigh
     snapshot
-  end
 
-  desc "Deploy a new version to TestFlight"
-  lane :testflight do
-    testflight
+    deliver
   end
 
   desc "Deploy a new version to the App Store"
-  lane :deploy do
-    deliver
+  lane :snapshot do
+    snapshot
   end
 end

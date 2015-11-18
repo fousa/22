@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0436C07F1BFCEEA0008D0FE6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0436C0811BFCEEA0008D0FE6 /* Localizable.strings */; };
+		0436C0851BFCF604008D0FE6 /* FURightImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436C0841BFCF604008D0FE6 /* FURightImageButton.swift */; };
 		048AD24A1BFBB1300012D9CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048AD24C1BFBB1300012D9CF /* Main.storyboard */; };
 		048AD24D1BFBB1390012D9CF /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048AD24F1BFBB1390012D9CF /* Settings.storyboard */; };
 		048AD2501BFBB13D0012D9CF /* Setup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048AD2521BFBB13D0012D9CF /* Setup.storyboard */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		0436C0801BFCEEA0008D0FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0436C0831BFCEEA5008D0FE6 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0436C0841BFCF604008D0FE6 /* FURightImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FURightImageButton.swift; sourceTree = "<group>"; };
 		048AD24B1BFBB1300012D9CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		048AD24E1BFBB1390012D9CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
 		048AD2511BFBB13D0012D9CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setup.storyboard; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		62BC86621BC673440013D5CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0436C0841BFCF604008D0FE6 /* FURightImageButton.swift */,
 				62BC86631BC673510013D5CD /* FUYearPickerView.swift */,
 			);
 			path = Views;
@@ -245,6 +248,7 @@
 			files = (
 				6299DDEE1BC2CC6900B37186 /* AppDelegate.swift in Sources */,
 				62A87E8B1BC2F75A00CEDBFE /* SetupViewController.swift in Sources */,
+				0436C0851BFCF604008D0FE6 /* FURightImageButton.swift in Sources */,
 				62A87E921BC2FA7A00CEDBFE /* SetupInfoViewController.swift in Sources */,
 				62A87E891BC2F71300CEDBFE /* CounterViewController.swift in Sources */,
 				62A87E981BC30F1B00CEDBFE /* FUDefaults.swift in Sources */,

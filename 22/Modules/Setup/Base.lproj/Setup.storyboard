@@ -67,11 +67,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brM-eW-BPs">
-                                <rect key="frame" x="212" y="528" width="176" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brM-eW-BPs" customClass="FURightImageButton" customModule="_2" customModuleProvider="target">
+                                <rect key="frame" x="185" y="538" width="231" height="22"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                <state key="normal" title="SET YOUR BIRTH YEAR">
+                                <state key="normal" title="SET YOUR BIRTH YEAR" image="Arrow">
                                     <color key="titleColor" red="0.0" green="0.66274509803921566" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -154,11 +153,10 @@ WHEN YOU TAKE THE ALGORITM BELOW INTO ACCOUNT, YOU GET YOUR DATE’S MINIMUM AGE
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvW-Ww-8ak">
-                                <rect key="frame" x="236" y="528" width="129" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvW-Ww-8ak" customClass="FURightImageButton" customModule="_2" customModuleProvider="target">
+                                <rect key="frame" x="211" y="538" width="179" height="22"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                <state key="normal" title="CALCULATE AGE">
+                                <state key="normal" title="CALCULATE AGE" image="Arrow">
                                     <color key="titleColor" red="0.0" green="0.66274509803921566" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -183,10 +181,10 @@ SO DON’T PRETEND YOU’RE YOUNGER THAN YOU REALLY ARE.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fI0-E3-KfP">
-                                <rect key="frame" x="0.0" y="147" width="600" height="381"/>
+                                <rect key="frame" x="0.0" y="147" width="600" height="391"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDZ-d4-Jow" customClass="FUYearPickerView" customModule="_2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="83" width="600" height="216"/>
+                                        <rect key="frame" x="0.0" y="88" width="600" height="216"/>
                                         <animations/>
                                     </pickerView>
                                 </subviews>
@@ -230,5 +228,6 @@ SO DON’T PRETEND YOU’RE YOUNGER THAN YOU REALLY ARE.</string>
     </scenes>
     <resources>
         <image name="Algoritm EN" width="165" height="64"/>
+        <image name="Arrow" width="10" height="15"/>
     </resources>
 </document>

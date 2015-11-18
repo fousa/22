@@ -102,7 +102,7 @@ WHEN YOU TAKE THE ALGORITM BELOW INTO ACCOUNT, YOU GET YOUR DATE’S MINIMUM AGE
                                 <color key="textColor" red="1" green="0.47450980390000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Algoritm" translatesAutoresizingMaskIntoConstraints="NO" id="uUu-hf-PXg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Algoritm EN" translatesAutoresizingMaskIntoConstraints="NO" id="uUu-hf-PXg">
                                 <rect key="frame" x="218" y="187" width="165" height="64"/>
                                 <animations/>
                                 <constraints>
@@ -134,6 +134,9 @@ WHEN YOU TAKE THE ALGORITM BELOW INTO ACCOUNT, YOU GET YOUR DATE’S MINIMUM AGE
                             <constraint firstItem="Fpg-dh-CtZ" firstAttribute="leading" secondItem="v8K-Lv-pvR" secondAttribute="leading" constant="30" id="zwq-t0-DdK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="uUu-hf-PXg" id="gDw-NM-zwj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6J-bH-DWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,8 +185,8 @@ SO DON’T PRETEND YOU’RE YOUNGER THAN YOU REALLY ARE.</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fI0-E3-KfP">
                                 <rect key="frame" x="0.0" y="147" width="600" height="381"/>
                                 <subviews>
-                                    <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rDZ-d4-Jow" customClass="FUYearPickerView" customModule="_2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="216"/>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDZ-d4-Jow" customClass="FUYearPickerView" customModule="_2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="83" width="600" height="216"/>
                                         <animations/>
                                     </pickerView>
                                 </subviews>
@@ -226,6 +229,6 @@ SO DON’T PRETEND YOU’RE YOUNGER THAN YOU REALLY ARE.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Algoritm" width="165" height="64"/>
+        <image name="Algoritm EN" width="165" height="64"/>
     </resources>
 </document>

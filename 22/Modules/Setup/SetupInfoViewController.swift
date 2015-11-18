@@ -14,7 +14,17 @@ protocol SetupInfoViewControllerDelegate {
 
 class SetupInfoViewController: UIViewController {
     
+    @IBOutlet var imageView: UIImageView!
+    
     var delegate: SetupInfoViewControllerDelegate?
+    
+    // MARK: - View flow
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        imageView.image = UIImage(named: NSLocalizedString("setup.image.algoritm", comment: "The algorim asset"))
+    }
     
     // MARK: - Actions
     

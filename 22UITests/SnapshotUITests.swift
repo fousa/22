@@ -14,21 +14,28 @@ class SnapshotUITests: XCTestCase {
         
         let app = XCUIApplication()
         app.launchArguments = ["uiTesting"]
-        setLanguage(app)
+        setupSnapshot(app)
         app.launch()
     }
     
-    func testExample() {
+    func testSnapshots() {
+        let app = XCUIApplication()
         
+        // Take a snapshot of the launch screen.
         snapshot("0Launch")
         
-        XCUIApplication().buttons.elementBoundByIndex(0).tap()
+        // Take a snapshot of the setup screen.
+        app.buttons.elementBoundByIndex(0).tap()
+        app.pickerWheels.elementBoundByIndex(0).adjustToPickerWheelValue("1984")
         snapshot("1Setup")
         
-        XCUIApplication().buttons.elementBoundByIndex(1).tap()
+        // Take a snapshot of the home screen.
+        app.buttons.elementBoundByIndex(1).tap()
         snapshot("2Home")
         
-        XCUIApplication().buttons.elementBoundByIndex(0).tap()
+        // Take a snapshot of the settings screen.
+        app.buttons.elementBoundByIndex(0).tap()
+        app.pickerWheels.elementBoundByIndex(0).adjustToPickerWheelValue("1988")
         snapshot("3Settings")
     }
 }

@@ -84,12 +84,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04891ECA1BFCFF5600731B9E /* 22UITests */ = {
+		042CDDAD1C26B4D500B4B761 /* Fastlane */ = {
 			isa = PBXGroup;
 			children = (
 				04891ED31BFCFF6B00731B9E /* SnapshotHelper.swift */,
-				04891ECB1BFCFF5600731B9E /* SnapshotUITests.swift */,
+			);
+			name = Fastlane;
+			sourceTree = "<group>";
+		};
+		042CDDAE1C26B4DD00B4B761 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				042CDDAD1C26B4D500B4B761 /* Fastlane */,
 				04891ECD1BFCFF5600731B9E /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		04891ECA1BFCFF5600731B9E /* 22UITests */ = {
+			isa = PBXGroup;
+			children = (
+				04891ECB1BFCFF5600731B9E /* SnapshotUITests.swift */,
+				042CDDAE1C26B4DD00B4B761 /* Support */,
 			);
 			path = 22UITests;
 			sourceTree = "<group>";

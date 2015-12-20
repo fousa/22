@@ -14,8 +14,6 @@ platform :ios do
 
     gym(scheme: "22") # Build your app - more options available
 
-    snapshot
-
     deliver
   end
 
